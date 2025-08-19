@@ -354,7 +354,7 @@ export default function Home() {
                           key={index} 
                           className="border-t py-6 sm:py-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
                           <div className="flex-shrink-0">
-                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[120px] sm:h-[120px]" />
+                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[60px] sm:h-[60px]" />
                           </div>
                           <div>
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h3>
@@ -379,7 +379,7 @@ export default function Home() {
                           key={index} 
                           className="border-t py-6 sm:py-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
                           <div className="flex-shrink-0">
-                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[120px] sm:h-[120px]" />
+                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[60px] sm:h-[60px]" />
                           </div>
                           <div>
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h3>
