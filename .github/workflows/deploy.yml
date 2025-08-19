@@ -37,13 +37,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
           
-      - name: Install dependencies
+      - name: Clean install
         run: |
-          if [ -f "pnpm-lock.yaml" ]; then
-            pnpm install --frozen-lockfile
-          else
-            pnpm install
-          fi
+          rm -f pnpm-lock.yaml
+          pnpm install
         
       - name: Build project
         run: pnpm run build
