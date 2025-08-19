@@ -40,7 +40,7 @@ const AnimatedPartners = ({ items, className = "" }: AnimatedPartnersProps) => {
       {items.map((partner, index) => (
         <div
           key={partner.id}
-          className={`w-14 h-14 rounded-full ${partner.bg || 'bg-muted'} border-3 border-white flex items-center justify-center transition-all duration-700 ${
+          className={`w-10 h-10 lg:w-14 lg:h-14 rounded-full ${partner.bg || 'bg-muted'} border-3 border-white flex items-center justify-center transition-all duration-700 ${
             index > 0 ? '-ml-5' : ''
           } ${
             inView 
