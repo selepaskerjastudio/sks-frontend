@@ -578,7 +578,7 @@ export default function Home() {
                 animationClass="animate-in slide-in-from-top-8 fade-in duration-500"
               >
                 <div className="border-t border-white/20 pt-10">
-                  <p className="text-center text-sm">Copyright © 2025 SKS. All rights reserved.</p>
+                  <p className="text-center text-sm">Copyright &copy; 2025 SKS. All rights reserved.</p>
                 </div>
               </ScrollAnimated>
             </div>
