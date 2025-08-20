@@ -280,7 +280,7 @@ export default function Home() {
                 delay={100}
                 animateBy="words"
                 direction="top"
-                className="scroll-m-20 text-5xl font-extrabold tracking-tight text-balance"
+                className="scroll-m-20 text-3xl lg:text-5xl font-extrabold tracking-tight text-balance"
                 animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
                 animationTo={[
                   { filter: 'blur(5px)', opacity: 0.5, y: 5 },
@@ -354,7 +354,7 @@ export default function Home() {
                           key={index} 
                           className="border-t py-6 sm:py-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
                           <div className="flex-shrink-0">
-                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[60px] sm:h-[60px]" />
+                            <Image src={service.icon} alt={service.title} width={80} height={80} className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" />
                           </div>
                           <div>
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h3>
@@ -379,7 +379,7 @@ export default function Home() {
                           key={index} 
                           className="border-t py-6 sm:py-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
                           <div className="flex-shrink-0">
-                            <Image src={service.icon} alt={service.title} width={80} height={80} className="sm:w-[60px] sm:h-[60px]" />
+                            <Image src={service.icon} alt={service.title} width={80} height={80} className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" />
                           </div>
                           <div>
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h3>
@@ -398,13 +398,13 @@ export default function Home() {
 
       {/* services */}
       <section id="services" className="py-10">
-        <div className="max-w-7xl mx-auto px-10">
+        <div className="max-w-7xl mx-auto px-4 lg:px-10">
           <BlurText
             text="Strategic IT Consultation & Digital Transformation Expertise"
             delay={100}
             animateBy="words"
             direction="top"
-            className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance mb-16 w-1/2 leading-12"
+            className="scroll-m-20 text-3xl lg:text-4xl font-extrabold tracking-tight text-balance mb-16 w-1/2 leading-12"
             animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
             animationTo={[
               { filter: 'blur(5px)', opacity: 0.5, y: 5 },
@@ -432,8 +432,8 @@ export default function Home() {
       </section>
       {/* happy clients */}
       <section id="clients" className="py-10">
-        <div className="mx-auto px-10">
-          <div className="bg-primary dark:bg-muted rounded-2xl p-20 text-white relative z-10">
+        <div className="mx-auto px-4 lg:px-10">
+          <div className="bg-primary dark:bg-muted rounded-2xl p-4 lg:p-20 text-white relative z-10">
             <div className="absolute top-0 -z-10 w-[100%] opacity-[0.15] left-0">
               <img className="max-w-full" src="/shape-1-light.webp" alt="image" />
             </div>
@@ -445,19 +445,19 @@ export default function Home() {
                     delay={100}
                     animateBy="words"
                     direction="top"
-                    className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance mb-2"
+                    className="scroll-m-20 text-3xl lg:text-4xl font-extrabold tracking-tight text-balance mb-2"
                   />
                   <ScrollAnimated 
                     animationClass="animate-in slide-in-from-bottom-8 fade-in duration-500"
                   >
-                    <p className="leading-7 text-xl font-semibold">
+                    <p className="leading-7 text-base lg:text-xl font-semibold">
                       These amazing companies trusted us with their digital dreams - and we delivered! 
                     </p>
                   </ScrollAnimated>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+              <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-12">
                 {
                   clients.map((client, index) => (
                     <ScrollAnimated 
@@ -503,7 +503,7 @@ export default function Home() {
           />
           <div className="grid grid-cols-2 lg:grid-cols-12 gap-4">
             {/* Top row - 4 items */}
-            {teams.slice(0, 4).map((team, index) => (
+            {teams.map((team, index) => (
               <ScrollAnimated 
                 animationClass={`animate-in slide-in-from-${index % 2 === 0 ? 'left' : 'right'}-8 fade-in duration-500`} 
                 key={index} 
@@ -524,29 +524,6 @@ export default function Home() {
                 </ScrollAnimated>
               ))}
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-4 mt-6 sm:mt-8 lg:mt-10">
-             {/* Bottom row - 5 items */}
-             {teams.slice(4, 9).map((team, index) => (
-               <ScrollAnimated 
-                animationClass={`animate-in slide-in-from-${index % 2 === 0 ? 'left' : 'right'}-8 fade-in duration-500`} 
-                key={index + 4} 
-                className="col-span-1 lg:col-span-2"
-              >
-                 <div className="rounded-2xl overflow-hidden relative h-full flex flex-col">
-                     <Image src={team.image} alt={team.name} width={150} height={150} className="w-full mb-4 dark:invert" />
-                     <div className="flex-1 flex flex-col">
-                       <div className="w-full bg-muted p-4 rounded-2xl h-full flex flex-col justify-between">
-                         <div>
-                           <h3 className="text-lg font-bold">{team.name}</h3>
-                           <span className="text-sm font-semibold mb-4 block">{team.role}</span>
-                         </div>
-                         <p className="text-sm italic opacity-70">{team.motto}</p>
-                       </div>
-                     </div>
-                   </div>
-                 </ScrollAnimated>
-               ))}
-           </div>
         </div>
       </section>
       {/* contact us */}
@@ -561,7 +538,7 @@ export default function Home() {
                     delay={100}
                     animateBy="words"
                     direction="top"
-                    className="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance mb-6 flex items-center justify-center"
+                    className="scroll-m-20 text-3xl lg:text-4xl font-extrabold tracking-tight text-balance mb-6 flex items-center justify-center"
                   />
                 </div>
                 <ScrollAnimated 

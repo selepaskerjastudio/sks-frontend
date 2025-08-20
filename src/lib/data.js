@@ -130,12 +130,6 @@ export const teams = [
     motto: "Numbers tell stories, and stories drive decisions."
   },
   {
-    role: "Product Manager",
-    name: "Riki Rahardi",
-    image: "/riki.svg",
-    motto: "Great products solve real problems for real people."
-  },
-  {
     role: "Full Stack Developer",
     name: "Bias",
     image: "/bias.svg",
