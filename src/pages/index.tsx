@@ -296,7 +296,7 @@ export default function Home() {
                 <p className="leading-7 [&:not(:first-child)]:mt-6">SKS delivers innovative digital products and expert IT consulting services to enhance efficiency and drive digital transformation, empowering businesses, institutions, and social organizations to achieve lasting success through adaptive technology.</p>
                 <p className="leading-7 [&:not(:first-child)]:mt-6 mb-8">SKS delivers innovative digital products and expert IT consulting services to enhance efficiency and drive digital transformation, empowering businesses, institutions, and social organizations to achieve lasting success through adaptive technology.</p>
 
-                <Link href="/" className={buttonVariants({ variant: "outline", size: "lg" })}>
+                <Link href="#contact" className={buttonVariants({ variant: "outline", size: "lg" })}>
                   Get in Touch
                   <ArrowRightIcon className="w-4 h-4" />
                 </Link>
@@ -545,7 +545,7 @@ export default function Home() {
                   animationClass="animate-in slide-in-from-bottom-8 fade-in duration-500"
                 >
                   <p className="leading-7 text-base lg:text-xl font-semibold mb-9">At Selepas Kerja Studio, we believe great work starts with a simple conversation. We’re more than just developers — we’re your creative allies, ready to transform your vision into something that leaves a mark. Whether you have a fully-formed plan or just the spark of an idea, we’ll work with you to shape, design, and build it into reality. Drop us a message today, and let’s start creating something worth talking about.</p>
-                  <Link href="/contact" className={buttonVariants({ variant: "secondary", size: "lg" })}>
+                  <Link href="https://api.whatsapp.com/send?phone=6282120077578" className={buttonVariants({ variant: "secondary", size: "lg" })}>
                     Contact Us Now
                     <Phone className="w-4 h-4" />
                   </Link>
