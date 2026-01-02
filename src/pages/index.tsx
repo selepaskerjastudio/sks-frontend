@@ -507,7 +507,7 @@ export default function Home() {
               <ScrollAnimated 
                 animationClass={`animate-in slide-in-from-${index % 2 === 0 ? 'left' : 'right'}-8 fade-in duration-500`} 
                 key={index} 
-                className="sm:col-span-1 lg:col-span-3"
+                className="sm:col-span-1 lg:col-span-4"
               >
                 <div className="rounded-2xl overflow-hidden relative h-full flex flex-col">
                     <Image src={team.image} alt={team.name} width={150} height={150} className="w-full mb-4 dark:invert" />

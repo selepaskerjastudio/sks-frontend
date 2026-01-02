@@ -147,6 +147,12 @@ export const teams = [
     image: "/fajar.svg",
     motto: "Behind every great user experience is solid architecture."
   },
+  {
+    role: "Backend Developer",
+    name: "Ruslan",
+    image: "/ruslan.svg",
+    motto: "Code is like a puzzle, every line fits perfectly."
+  },
 ]
 
 export const partners = [
