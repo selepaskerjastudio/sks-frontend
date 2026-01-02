@@ -529,12 +529,12 @@ export default function Home() {
       {/* contact us */}
       <section id="contact" className="py-10">
         <div className="mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="bg-primary dark:bg-muted rounded-2xl p-6 sm:p-12 lg:p-20 text-white">
+          <div className="bg-primary dark:bg-muted rounded-2xl p-6 sm:p-12 lg:p-15 text-white">
             <div className="max-w-7xl mx-auto">
               <div className="text-center w-full lg:w-[80%] mx-auto mb-12 sm:mb-16 lg:mb-20">
                 <div className="flex items-center justify-center">
                   <BlurText
-                    text="Let’s Turn Ideas Into Impact"
+                    text="Let&apos;s Turn Ideas Into Impact"
                     delay={100}
                     animateBy="words"
                     direction="top"
@@ -544,7 +544,7 @@ export default function Home() {
                 <ScrollAnimated 
                   animationClass="animate-in slide-in-from-bottom-8 fade-in duration-500"
                 >
-                  <p className="leading-7 text-base lg:text-xl font-semibold mb-9">At Selepas Kerja Studio, we believe great work starts with a simple conversation. We’re more than just developers — we’re your creative allies, ready to transform your vision into something that leaves a mark. Whether you have a fully-formed plan or just the spark of an idea, we’ll work with you to shape, design, and build it into reality. Drop us a message today, and let’s start creating something worth talking about.</p>
+                  <p className="leading-7 text-base lg:text-xl font-semibold mb-9">At Selepas Kerja Studio, we believe great work starts with a simple conversation. We&apos;re more than just developers we&apos;re your creative allies, ready to transform your vision into something that leaves a mark. Whether you have a fully-formed plan or just the spark of an idea, we&apos;ll work with you to shape, design, and build it into reality. Drop us a message today, and let&apos;s start creating something worth talking about.</p>
                   <Link href="https://api.whatsapp.com/send?phone=6282120077578" className={buttonVariants({ variant: "secondary", size: "lg" })}>
                     Contact Us Now
                     <Phone className="w-4 h-4" />
@@ -555,7 +555,8 @@ export default function Home() {
                 animationClass="animate-in slide-in-from-top-8 fade-in duration-500"
               >
                 <div className="border-t border-white/20 pt-10">
-                  <p className="text-center text-sm">Copyright &copy; 2025 SKS. All rights reserved.</p>
+                  <p className="text-center text-sm mb-1">Copyright &copy; {new Date().getFullYear()} SKS.</p>
+                  <p className="text-center text-sm">A brand operated by PT Kreasi Selepas Kerja (Selepas Kerja Studio).</p>
                 </div>
               </ScrollAnimated>
             </div>
